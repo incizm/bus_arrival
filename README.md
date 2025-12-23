@@ -16,6 +16,25 @@ Development
 4. `npm start`
 5. `python viewer.py`
 
+Acronyms
+---
+
+- `operator`:
+  - `SBST` - SBS Transit
+  - `SMRT` - SMRT Corporation
+  - `TTS` - Tower Transit Singapore
+  - `GAS` - Go Ahead Singapore
+- `load`:
+  - `SEA` - Seats Available
+  - `SDA` - Standing Available
+  - `LSD` - Limited Standing
+- `feature`:
+  - `WAB` - Wheelchair Accessible Bus
+- `type`:
+  - `SD` - Single Deck
+  - `DD` - Double Deck
+  - `BD` - Bendy
+
 License
 ---
 

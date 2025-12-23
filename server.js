@@ -125,7 +125,7 @@ async function handler(req, res) {
 module.exports = handler;
 
 if (isDev) {
-  const PORT = process.env.PORT || 8081;
+  const PORT = process.env.PORT || 3000;
   const listen = () => console.log(`Listening on ${PORT}...`);
   require('http').createServer(handler).listen(PORT, listen);
   console.log('Server started at port ' + PORT);
