@@ -5,11 +5,6 @@ import os
 from dotenv import load_dotenv
 
 load_dotenv()
-bus_stop = os.getenv("BUS_STOP")
-
-URL = f"http://127.0.0.1:3000/?id={bus_stop}"
-
-
 # ---------- Formatting helpers ----------
 
 def format_time(iso_time: str) -> str:
@@ -66,6 +61,12 @@ def deconstruct_bus_response(data: Dict[str, Any]) -> List[Dict[str, Any]]:
 # ---------- Main execution ----------
 
 def main():
+
+    bus_stop = input("Ënter bus stop code:")
+    if bus_stop == "":
+        bus_stop = 73019 
+    URL = f"http://127.0.0.1:3000/?id={bus_stop}"
+
     try:
         response = requests.get(URL, timeout=5)
         response.raise_for_status()
